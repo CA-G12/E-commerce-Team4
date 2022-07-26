@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+:root {
+  --light-gray: #b8d8d8;
+  --medium-gray: #7a9a9f;
+  --dark-gray: #4f6367;
+  --off-white: #eef5db;
+  --light-red: #fe5f55;
+}
