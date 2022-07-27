@@ -201,7 +201,6 @@ function showForm(e) {
 }
 
 function showItem(obj) {
-  console.log('hhheeee');
   document.querySelector('.content div h3').textContent = obj.name;
   document.querySelector('.content div p').textContent = obj.price;
   imageBg.style.backgroundImage = `url(${obj.imageUrl})`;
