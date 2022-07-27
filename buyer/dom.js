@@ -100,7 +100,7 @@ let products = [
   },
 ];
 
-localStorage.setItem('products', JSON.stringify(products));
+// localStorage.setItem('products', JSON.stringify(products));
 
 if (storageProducts) {
   let newArr = products.concat(storageProducts);
