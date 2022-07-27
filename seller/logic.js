@@ -25,6 +25,7 @@ addBtn.addEventListener("click", (e) => {
 
 
 function addProductToArray(imgurl, name, price, category) {
+    let chars = 'abcdefghijklmnopqrstuvwxyz'
     let id =
         '' +
         Math.floor(Math.random() * 9) +
@@ -37,7 +38,7 @@ function addProductToArray(imgurl, name, price, category) {
         id:id,
         name: name,
         imageUrl: imgurl,
-        price: price,
+        price: `$${price}`,
         category: category
 
     }
@@ -48,7 +49,7 @@ function addProductToArray(imgurl, name, price, category) {
 
     addToLocalStorage(arrOfProduct);
 
-    addProductToPage(arrOfProduct)
+    addProductToPage(product)
     // addProductToCustomerPage(arrOfProduct)
 
     return arrOfProduct;

@@ -15,11 +15,11 @@
     <title>Products</title>
   </head>
   <body>
-   <!-- create nav bar-->
+    <!-- create nav bar-->
     <header>
       <div class="home">
         <nav>
-          <img class="logo" src="../images/logo.png" alt="sorry">
+          <img class="logo" src="../images/logo.png" alt="sorry" />
           <ul class="content">
             <li><a href="#">Home</a></li>
             <li><a href="#">customer</a></li>
@@ -30,36 +30,95 @@
           <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
       </div>
-  </header>
-    <main></main>
- <!-- ----------------------------- Start About footer -----------------------------  -->
- <footer>
-  <div class="firstHeader">
-    <h2>Header</h2>
-    <p class="discriptionOfFirstHeader">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti minus quas perspiciatis est dicta aut architecto corporis doloremque.</p>
-    <div class="icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-linkedin"></i>
-    </div>
-  </div>
-  <div class="secondeHeader">
-    <h2>HeaderText</h2>
-    <p>Lorem</p>
-    <p>Lorem</p>
-    <p>Lorem</p>
-    <p>Lorem</p>
-  </div>
-  <div class="thirdHeader">
-    <h2>HeaderText</h2>
-    <p>Lorem</p>
-    <p>Lorem</p>
-    <p>Lorem</p>
-    <p>Lorem</p>
-  </div>
-</footer>
-<!-- ----------------------------- End About footer -----------------------------  -->    
+    </header>
+    <main>
+      <!-- start of filter section -->
+      <section id="filter-section">
+        <ul class="filter-list">
+          <li>
+            <span id="categories">
+              Categories
+              <i class="fa-solid fa-caret-down"></i>
+            </span>
+            <ul class="list">
+              <li>Pants</li>
+              <li>Shirts</li>
+              <li>Dresses</li>
+              <li>Suits</li>
+              <li>Socks</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="search">
+          <input type="text" placeholder="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </section>
+      <!-- end of filter section -->
+
+      <!-- start of cards section -->
+      <section id="cards-section"></section>
+      <!-- end of cards section -->
+
+      <!-- start of add to cart section -->
+      <section id="add-cart">
+        <div class="add-form">
+          <div class="image-bg"></div>
+          <div class="content">
+            <div>
+              <h3>Name</h3>
+              <p>$25</p>
+            </div>
+            <div class="counter">
+              <span class="increment"><i class="fa-solid fa-plus"></i></span>
+              <span class="quantity">1</span>
+              <span class="decrement"><i class="fa-solid fa-minus"></i></span>
+            </div>
+          </div>
+
+          <div class="total">
+            <span>Sub total</span>
+            <span class="total-price">$0</span>
+          </div>
+
+          <button class="buy-btn">Add</button>
+        </div>
+      </section>
+      <!-- end of add to cart section -->
+    </main>
+    <!-- ----------------------------- Start About footer -----------------------------  -->
+    <footer>
+      <div class="firstHeader">
+        <h2>Header</h2>
+        <p class="discriptionOfFirstHeader">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          corrupti minus quas perspiciatis est dicta aut architecto corporis
+          doloremque.
+        </p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="secondeHeader">
+        <h2>HeaderText</h2>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+      </div>
+      <div class="thirdHeader">
+        <h2>HeaderText</h2>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+      </div>
+    </footer>
+    <!-- ----------------------------- End About footer -----------------------------  -->
     <script src="./logic.js"></script>
     <script src="./dom.js"></script>
   </body>
