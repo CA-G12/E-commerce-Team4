@@ -195,12 +195,13 @@ decrement.addEventListener('click', () => {
 
 function showForm(e) {
   let id = e.target.parentElement.parentElement.id;
-  let product = item(id, storageProducts);
+  let product = item(id, storageProducts || products);
   showItem(product);
   addCart.style.display = 'flex';
 }
 
 function showItem(obj) {
+  console.log('hhheeee');
   document.querySelector('.content div h3').textContent = obj.name;
   document.querySelector('.content div p').textContent = obj.price;
   imageBg.style.backgroundImage = `url(${obj.imageUrl})`;
