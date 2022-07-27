@@ -3,7 +3,8 @@ const addButton = document.querySelector(".btn-add");
 const exit = document.querySelector(".exit");
 const elemntDropdown = document.querySelector(".elemntDropdown");
 const dropdown = document.querySelectorAll(".dropdown-content a");
-const products = JSON.parse(localStorage.getItem("products") || "[]");
+
+let products = JSON.parse(localStorage.getItem("products") || "[]");
 
 // click button to show pop-up
 addButton.addEventListener("click", (event) => {
@@ -47,6 +48,9 @@ function getCategories(e) {
 
 const renderPRoducts = () => {
   const productsContainer = document.getElementById("productsContainer");
+
+  productsContainer.textContent = ''
+
   products.forEach((product) => {
     const card = document.createElement("div");
     const image = document.createElement("img");
@@ -83,20 +87,11 @@ const renderPRoducts = () => {
 };
 renderPRoducts();
 
-// Delete function
 function deleteProduct(e) {
-  let id = e.target.parentElement.parentElement.id;
-  e.target.parentElement.parentElement.remove();
-  deleteFromlocal(id);
-}
-
-function deleteFromlocal(id) {
-  for (let i = 0; i < products.length; i++) {
-    if (products[i].id === id) {
-      products.splice(i, 1);
-      i--;
-    }
-  }
+  const productId = e.target.parentElement.parentElement.id;
+  products = removeProduct(products, productId);
 
   localStorage.setItem("products", JSON.stringify(products));
+
+  renderPRoducts()
 }
