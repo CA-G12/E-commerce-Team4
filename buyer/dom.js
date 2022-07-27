@@ -195,7 +195,7 @@ decrement.addEventListener('click', () => {
 
 function showForm(e) {
   let id = e.target.parentElement.parentElement.id;
-  let product = item(id, storageProducts);
+  let product = item(id, storageProducts || products);
   showItem(product);
   addCart.style.display = 'flex';
 }
