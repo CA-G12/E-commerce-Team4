@@ -48,3 +48,33 @@ dropdown.forEach((e) => {
 function getCategories (e) {
     console.log(e.target.textContent);
 }
+
+
+
+// Add Products to Page
+function addProductToPage(arrOfProduct) {
+  let cardcontainer = document.querySelector(".cards");
+
+
+}
+
+  function addToLocalStorage(pro){
+
+    window.localStorage.setItem("products",JSON.stringify(pro) )
+  }
+
+
+
+
+        function  renderproduct(url,name,price){
+          let cardcontainer = document.querySelector(".cards");
+          cardcontainer.innerHTML +=
+           `<div class="card4">
+          <img src=${url} alt="t-shirt" />
+          <p><strong>${name}</strong></p>
+          <p><strong>${price}</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div> `
+        
+
+        }
