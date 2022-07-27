@@ -4,6 +4,7 @@ const exit = document.querySelector(".exit");
 const elemntDropdown = document.querySelector(".elemntDropdown");
 const dropdown = document.querySelectorAll(".dropdown-content a");
 const products = JSON.parse(localStorage.getItem("products") || "[]");
+let product = {}
 
 // click button to show pop-up
 addButton.addEventListener("click", (event) => {
@@ -99,4 +100,56 @@ function deleteFromlocal(id) {
   }
 
   localStorage.setItem("products", JSON.stringify(products));
+}
+
+
+
+// Add Products to Page
+function addProductToPage(product) {
+  product = product
+
+}
+
+function addToLocalStorage(pro) {
+
+  window.localStorage.setItem("products", JSON.stringify(pro))
+}
+
+
+
+
+function renderproduct() {
+  const productsContainer = document.getElementById("productsContainer");
+  const card = document.createElement("div");
+  const image = document.createElement("img");
+  const pOfName = document.createElement("p");
+  const pOfPrice = document.createElement("p");
+  const title = document.createElement("strong");
+  const price = document.createElement("strong");
+  const divIconCards = document.createElement("div");
+  const editIcon = document.createElement("i");
+  const deletedIcon = document.createElement("i");
+
+  card.classList.add("card");
+  divIconCards.classList = "iconCards";
+  deletedIcon.classList = "fa-solid fa-trash trash-btn";
+  editIcon.classList = "fa-solid fa-gear";
+  deletedIcon.addEventListener("click", deleteProduct);
+
+  card.id = product.id;
+  image.src = product.imageUrl;
+  title.textContent = product.name;
+  price.textContent = product.price;
+
+  card.appendChild(image);
+  pOfName.appendChild(title);
+  card.appendChild(pOfName);
+  pOfPrice.appendChild(price);
+  card.appendChild(pOfPrice);
+  divIconCards.appendChild(deletedIcon);
+  divIconCards.appendChild(editIcon);
+  card.appendChild(divIconCards);
+
+  productsContainer.appendChild(card);
+
 }
