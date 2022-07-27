@@ -15,12 +15,11 @@
     <title>Seller</title>
   </head>
   <body>
-    <header>
-      <!-- create nav bar-->
+    <!-- ----------------------------- Start About Header -----------------------------  -->
     <header>
       <div class="home">
         <nav>
-          <img class="logo" src="../images/logo.png" alt="sorry">
+          <img class="logo" src="../images/logo.png" alt="sorry" />
           <ul class="content">
             <li><a href="#">Home</a></li>
             <li><a href="#">customer</a></li>
@@ -31,10 +30,161 @@
           <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
       </div>
-  </header>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- ----------------------------- End About Header -----------------------------  -->
+    <!-- ----------------------------- Start About Main -----------------------------  -->
+    <main>
+      <div class="headerPhoto">
+        <img src="../images/header.png" alt="header-photo" />
+      </div>
+      <div class="form">
+        <form action="#popUp-add">
+          <label for="search"></label>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="search"
+            type="text"
+            placeholder="Search"
+            name="search"
+            id="search"
+          />
+        </form>
+      </div>
+      <div class="addItem">
+        <form action="#popUp-add">
+          <button class="btn-add">
+            Add Item <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+      </div>
+      <div class="popUp-add hide">
+        <form action="#">
+          <label for="name">Add Item</label>
+          <input
+            class="inputForm"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name :"
+          />
+          <input
+            class="inputForm"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Img URL :"
+          />
+          <input
+            class="inputForm"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Price :"
+          />
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              Categories &nbsp; ⇩
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a class="elemntDropdown" href="#home">Pants</a>
+              <a class="elemntDropdown" href="#shirts">Shirts</a>
+              <a class="elemntDropdown" href="#dresses">Dresses</a>
+              <a class="elemntDropdown" href="#suits">Suits</a>
+              <a class="elemntDropdown" href="#socks">Socks</a>
+            </div>
+          </div>
+          <div class="linksForm">
+            <a class="linkAdd" href="#">Add</a>
+            <a class="linkAdd exit" href="#">Exit</a>
+          </div>
+        </form>
+      </div>
+      <div class="cards">
+        <div class="card1">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card2">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card3">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card4">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card1">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card2">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card3">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <div class="card4">
+          <img src="../images/t-shirt.png" alt="t-shirt" />
+          <p><strong>Name</strong></p>
+          <p><strong>25$</strong></p>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+    </main>
+    <!-- ----------------------------- End About Main -----------------------------  -->
+    <!-- ----------------------------- Start About footer -----------------------------  -->
+    <footer>
+      <div class="firstHeader">
+        <h2>Header</h2>
+        <p class="discriptionOfFirstHeader">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          corrupti minus quas perspiciatis est dicta aut architecto corporis
+          doloremque.
+        </p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="secondeHeader">
+        <h2>HeaderText</h2>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+      </div>
+      <div class="thirdHeader">
+        <h2>HeaderText</h2>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+        <p>Lorem</p>
+      </div>
+    </footer>
+    <!-- ----------------------------- End About footer -----------------------------  -->
     <script src="./logic.js"></script>
     <script src="./dom.js"></script>
   </body>
