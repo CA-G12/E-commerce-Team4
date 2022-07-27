@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 :root {
@@ -14,3 +14,121 @@
   --off-white: #eef5db;
   --light-red: #fe5f55;
 }
+
+/* style nav bar*/
+.logo {
+  width: 180px;
+  height: 150px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 0px;
+  background-color: white;
+}
+nav ul {
+  padding-right: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 2px 10px 0px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 7px;
+}
+
+.home .cart {
+  width: 50px;
+  text-decoration: none;
+  color: #4b6672;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: #4b6672;
+  transition: 0.1s;
+}
+cartpage {
+  margin: 80px auto;
+}
+table {
+  width: 100%;
+  padding: 0px 30px;
+  color: black;
+  font-weight: normal;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+.cart-info img {
+  width: 100px;
+  height: 120px;
+  margin-right: 50px;
+}
+th {
+  padding: 5px;
+  text-align: left;
+  border-bottom: var(--light-gray) solid 2px;
+}
+.color {
+  color: var(--light-red);
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+td a {
+  font-size: 16px;
+  margin: 30px;
+}
+td {
+  padding: 10px 5px;
+  border-bottom: var(--light-gray) solid 2px;
+}
+td .p {
+  margin-bottom: 3px;
+}
+
+.price {
+  width: 20%;
+  font-weight: 500;
+}
+.total {
+  width: 20%;
+  font-weight: 500;
+}
+.cart-info .p span {
+  color: var(--light-red);
+  font-weight: 600;
+}
+
+/* ----------------------------- Start About Footer ----------------------------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  background-color: #4f6367;
+  color: #fff;
+}
+
+.discriptionOfFirstHeader {
+  max-width: 420px;
+}
+.icons i {
+  padding: 10px;
+}
+/* ----------------------------- End About Footer ----------------------------- */

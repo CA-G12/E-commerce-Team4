@@ -12,5 +12,78 @@
   --medium-gray: #7a9a9f;
   --dark-gray: #4f6367;
   --off-white: #eef5db;
-  --light-red: #fe5f55;
+  --light-red: #725e5d;
 }
+/* style nav bar*/
+
+  .logo{
+   width:180px;
+   height: 150px;
+   
+  }
+  nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 0px;
+  background-color:white
+  
+  }
+  nav ul {
+  padding-right: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  }
+  nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 2px 10px 0px;
+  
+  }
+  nav ul li a{
+  color:black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding:7px;
+  }
+  
+  .home .cart{
+    width:50px ;
+    text-decoration: none;
+    color: 
+    #4b6672;
+    font-size: 1.5rem;
+    cursor: pointer;
+  
+  }
+  nav ul li a:hover{
+   color:white;
+  background-color:  #4b6672;
+  transition: 0.1s;
+ 
+  }
+
+  /* ----------------------------- Start About Footer ----------------------------- */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  background-color: #4F6367;
+  color: #fff;
+}
+
+.discriptionOfFirstHeader {
+  max-width: 420px;
+}
+.icons i {
+  padding: 10px;
+}
+/* ----------------------------- End About Footer ----------------------------- */
+  
+
+
