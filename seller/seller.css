@@ -169,31 +169,35 @@ footer {
 .linksForm {
   margin-top: 20px;
 }
-.cards {
+#productsContainer {
   display: flex;
   justify-content: space-around;
   margin: 50px 0px;
 }
-.cards img {
+#productsContainer img {
   max-width: 150px;
   padding: 25px;
   border-radius: 50px;
   margin: 0px 20px;
 }
-.cards div {
+.card {
   background: #eeeff1;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 13px 1px #525151;
 }
-.cards i {
+#productsContainer i {
   display: flex;
   justify-content: flex-end;
   margin: 10px 13px;
 }
-.cards p {
+#productsContainer p {
   padding: 10px;
   margin-left: 10px;
+}
+.iconCards {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ----------------------------- End About Main ----------------------------- */
