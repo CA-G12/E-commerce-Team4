@@ -42,13 +42,18 @@ function addProductToArray(imgurl, name, price, category) {
     category: category,
   };
 
-  renderproduct(product);
+  if (imgurl && name && price && category) {
+    renderproduct(product);
 
-  arrOfProduct.push(product);
+    arrOfProduct.push(product);
 
-  addToLocalStorage(arrOfProduct);
+    addToLocalStorage(arrOfProduct);
 
-  addProductToPage(product);
+    addProductToPage(product);
+  } else {
+    alert('Add item please');
+  }
+
   // addProductToCustomerPage(arrOfProduct)
 
   return arrOfProduct;
