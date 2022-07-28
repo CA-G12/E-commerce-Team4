@@ -197,7 +197,7 @@ function showForm(e) {
   let id = e.target.parentElement.parentElement.id;
   if (storageProducts.length === 0 || !storageProducts)
     storageProducts = products;
-  let product = item(id, products);
+  let product = item(id, storageProducts);
   showItem(product);
   addCart.style.display = 'flex';
 }
