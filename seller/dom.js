@@ -3,8 +3,11 @@ const addButton = document.querySelector('.btn-add');
 const exit = document.querySelector('.exit');
 const elemntDropdown = document.querySelector('.elemntDropdown');
 const dropdown = document.querySelectorAll('.dropdown-content a');
+const search = document.querySelector('#search');
 let products = JSON.parse(localStorage.getItem('products') || '[]');
 let product = {};
+
+search.addEventListener('keyup', searchItem);
 
 // click button to show pop-up
 addButton.addEventListener('click', (event) => {
@@ -99,6 +102,49 @@ function deleteProduct(e) {
 // Add Products to Page
 function addProductToPage(product) {
   product = product;
+}
+
+// search for an item
+function searchItem(e) {
+  const productsContainer = document.getElementById('productsContainer');
+
+  let search = e.target.value;
+  productsContainer.textContent = '';
+  products.forEach((product) => {
+    if (product.name.toLowerCase().includes(search)) {
+      const card = document.createElement('div');
+      const image = document.createElement('img');
+      const pOfName = document.createElement('p');
+      const pOfPrice = document.createElement('p');
+      const title = document.createElement('strong');
+      const price = document.createElement('strong');
+      const divIconCards = document.createElement('div');
+      const editIcon = document.createElement('i');
+      const deletedIcon = document.createElement('i');
+
+      card.classList.add('card');
+      divIconCards.classList = 'iconCards';
+      deletedIcon.classList = 'fa-solid fa-trash trash-btn';
+      editIcon.classList = 'fa-solid fa-gear';
+      deletedIcon.addEventListener('click', deleteProduct);
+
+      card.id = product.id;
+      image.src = product.imageUrl;
+      title.textContent = product.name;
+      price.textContent = product.price;
+
+      card.appendChild(image);
+      pOfName.appendChild(title);
+      card.appendChild(pOfName);
+      pOfPrice.appendChild(price);
+      card.appendChild(pOfPrice);
+      divIconCards.appendChild(deletedIcon);
+      divIconCards.appendChild(editIcon);
+      card.appendChild(divIconCards);
+
+      productsContainer.appendChild(card);
+    }
+  });
 }
 
 function addToLocalStorage(pro) {
