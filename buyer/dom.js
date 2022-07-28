@@ -194,10 +194,10 @@ decrement.addEventListener('click', () => {
 });
 
 function showForm(e) {
+  var newData;
   let id = e.target.parentElement.parentElement.id;
-  if (storageProducts.length === 0 || !storageProducts)
-    storageProducts = products;
-  let product = item(id, storageProducts);
+  if (storageProducts) newData = [...products, ...storageProducts];
+  let product = item(id, newData);
   showItem(product);
   addCart.style.display = 'flex';
 }
