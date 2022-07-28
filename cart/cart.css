@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Montserrat:wght@100&family=Poppins:wght@100&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -60,7 +60,7 @@ nav ul li a:hover {
   background-color: #4b6672;
   transition: 0.1s;
 }
-cartpage {
+.cartpage {
   margin: 80px auto;
 }
 table {
